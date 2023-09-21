@@ -19,6 +19,6 @@ WIDGET = {
       "city": "CN101210101",
       "left": "100",
       "top": "0",
-      "key": "8fb680da061248e4b6a79e0ea05230cc"
+      "key": "7d4a8e7eba804b3ca1da4071084b3756"
     }
   }
