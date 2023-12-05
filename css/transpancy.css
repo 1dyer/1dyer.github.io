@@ -3,10 +3,7 @@
     background: var(--light_bg_color)
 }
 
-#web_bg {
-    background: linear-gradient(107.7deg, rgb(101, 168, 143) -30.7%, rgb(144, 220, 193) 7.2%, rgb(225, 203, 150) 31.3%, rgb(251, 166, 150) 82.6%, rgb(250, 54, 65) 128.5%);
 
-}
 
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content>.card-widget {
