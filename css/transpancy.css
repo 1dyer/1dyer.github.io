@@ -1,8 +1,49 @@
+/*这里放外框*/
+body{
+    cursor:url(https://cdn.custom-cursor.com/db/7248/32/starter-3d-effect-cursor-cursor.png) , default!important;
+    }
+    /*这里放内框*/
+a,img,button{
+    cursor:url(https://cdn.custom-cursor.com/db/7247/32/starter-3d-effect-cursor-pointer.png) , pointer!important;
+    }
+ 
+    
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(214, 242, 244, 0.7) !important;
+    border:2px solid #0ff5ff;
+    box-shadow: 1px 1px 10px #0ff5ff !important;
+}
+#git_container,#archive,#page{
+    background:rgba(0,0,0,0.7);
+    border: 2px solid #0ff5ff !important;
+    box-shadow: 1px 1px 20px #0ff5ff !important;
+}
+
+/*所有的侧边栏边框*/
+.card-widget{
+    border:2px solid #3d0f3f00 !important;
+    box-shadow: 1px 1px 20px #c4e8fc !important;
+    --font-color:red;
+    --text-highlight-color:red;
+}
+/*主题下面的字体颜色*/
+[data-theme='dark']{
+--font-color:#fdeacc00;
+--text-highlight-color:#fdeacc;
+}
+
+/*标题和副标题*/
+#subtitle,#site-title{
+color:#ffffff !important;
+}
+
+
 
 #recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
     background: var(--light_bg_color)
 }
-
 
 
 /* 侧边栏个人信息卡片动态渐变色 */
