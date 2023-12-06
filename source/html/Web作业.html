@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+      .header{
+        background-color: beige;
+        text-align: center;
+        padding: 10px;
+      }
+      .header h1{
+        font-size: 40px;
+        color:rgb(255, 239, 93);
+      }
+      .topnav{
+        overflow: hidden;
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 10px;
+      }
+      .topnav a{
+        text-decoration: none;
+        text-align: center;
+        color:brown;
+        padding: 20px;
+        font-size: 40px;
+      }
+      .topnav a:hover{
+        background-color: brown;
+        color: black;
+      }
+      .row{
+        background-color: rgb(243, 240, 236);
+      }
+      .column {
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .column:first-child {
+        width: 30%;
+      }
+      .column:nth-child(2),
+      .column:nth-child(3),
+      .column:nth-child(4) {
+        width: 20%;
+      }
+      .column h2{
+        font-size: 40px;
+      }
+      .column p{
+        font-size: 21px;
+      }
+      .row::after{
+        display: table;
+        clear: both;
+        content:"";
+      }
+      @media screen and (max-width:600px) {
+        body{
+          background-color: rgb(255, 234, 140);
+        }
+        .column{
+          width: 100%;
+        }
+      }
+      .footer {
+        background-color: #ffe7e7;
+        text-align: center;
+        padding: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>汗牛充栋</h1>
+    </div>
+    <div class="topnav">
+      <a href="#" ><i class="fa fa-book" aria-hidden="true"></i>《诗经》</a>
+      <a href="#" ><i class="fa fa-book" aria-hidden="true"></i>《唐诗》</a>
+      <a href="#" ><i class="fa fa-book" aria-hidden="true"></i>《晋书》</a>
+    </div>
+
+    <div class="row">
+
+      <div class="column">
+        <h2>长相思</h2>
+        <p>长相思，在长安。</p>
+        <p>络纬秋啼金井阑，微霜凄凄簟色寒。</p>
+        <p>孤灯不明思欲绝，卷帷望月空长叹。</p>
+        <p>美人如花隔云端！</p>
+        <p>上有青冥之长天，下有渌水之波澜。</p>
+        <p>天长路远魂飞苦，梦魂不到关山难。</p>
+        <p>长相思，摧心肝。</p>
+      </div>
+
+      <div class="column">
+        <h2>木瓜</h2>
+        <p>投我以木瓜，报之以琼琚。匪报也，永以为好也。</p>
+        <p>投我以木桃，报之以琼瑶。匪报也，永以为好也。</p>
+        <p>投我以木李，报之以琼玖。匪报也，永以为好也。</p>
+      </div>
+
+      <div class="column">
+        <h2>陇西行</h2>
+        <p>誓扫匈奴不顾身，五千貂锦丧胡尘。</p>
+        <p>可怜无定河边骨，犹是春闺梦里人。</p>
+
+      </div>
+
+      <div class="column">
+        <h2>过洞庭湖</h2>
+        <p>西风吹老洞庭波，一夜湘君白发多。</p>
+        <p>醉后不知天在水，满船清梦压星河。</p>
+      </div>
+    </div>
+
+      <div class="footer">
+        <p>Created By Ldyer 2023-11-6 11:08:25</p>
+      </div>
+
+  </body>
+</html>

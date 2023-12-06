@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    function generateRandomNumbers() {
+      const randomNumbers = [];
+      for (let i = 0; i < 10; i++) {
+        const randomNumber = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+        randomNumbers.push(randomNumber);
+      }
+      document.getElementById("originalArray").textContent = "10个无序数字: " + randomNumbers.join(' ');
+      randomNumbers.sort((a, b) => a - b);
+      return randomNumbers;
+    }
+
+    function displayResult() {
+      const resultArray = generateRandomNumbers();
+      document.getElementById("sortedArray").textContent = "排序后的数字: " + resultArray.join(' ');
+    }
+  </script>
+</head>
+<body>
+  <button onclick="displayResult()">按钮</button>
+  <p id="originalArray"></p>
+  <p id="sortedArray"></p>
+</body>
+</html>

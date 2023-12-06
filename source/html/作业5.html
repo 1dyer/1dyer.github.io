@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function chaodai(){
+                var dai = document.getElementById("dai").value;
+                var people;
+
+                switch (dai){
+                    case "汉代":
+                        people = ["刘邦","刘盈","刘彻","刘秀"];
+                        break;
+                    case "三国":
+                        people = ["曹丕","刘备","孙权","蒸蒸"];
+                        break;
+                    case "唐代":
+                        people = ["李渊","李世民","李治","李隆基"];
+                        break;
+                    case "明代":
+                        people = ["朱元璋","朱允炆","朱棣","朱由检"];
+                        break;
+                }
+
+                var human = document.getElementById("people");
+                human.options.length = 0; // Clear existing options
+
+                for(var i = 0; i < people.length; i++) {
+                    human.options[i] = new Option(people[i], people[i]);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label for="dai">选择朝代：</label>
+        <select id="dai" onchange="chaodai()">
+            <option value=" "> </option>
+            <option value="汉代">汉代</option>
+            <option value="三国">三国</option>
+            <option value="唐代">唐代</option>
+            <option value="明代">明代</option>
+        </select>
+
+        <label for="people">选择人物：</label>
+        <select id="people"></select>
+    </body>
+</html>

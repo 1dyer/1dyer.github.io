@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #displayBox {
+          width: 300px;
+          height: 80px;
+          border: 2px solid #841919;
+          text-align: center;
+          line-height: 50px;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        button {
+          font-size: 16px;
+          padding: 10px;
+          margin-left: 50px;
+          margin-top: 10px;
+        }
+        img {
+            margin-top: 100px;
+        }
+      </style>
+</head>
+<body>
+
+  <h1 id="currentTime"></h1>
+
+  <script>
+    function updateTime() {
+      var currentTimeElement = document.getElementById('currentTime');
+      var currentTime = new Date();
+
+      var years = currentTime.getFullYear();
+      var months = currentTime.getMonth()+1;
+      var days = currentTime.getDate();
+
+      var hours = currentTime.getHours();
+      var minutes = currentTime.getMinutes();
+      var seconds = currentTime.getSeconds();
+      var formattedTime = years +"年"+ months +"月"+ days +"日 "+ addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
+      currentTimeElement.textContent = formattedTime;
+    }
+    function addZeroBefore(number) {
+      return number < 10 ? '0' + number : number;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+  <div id="displayBox">快来测测你是什么猫=w=</div>
+  <button onclick="startCats()">开始</button>
+  <button onclick="stopCats()">结束</button>
+
+  <script>
+    var displayBox = document.getElementById('displayBox');
+    var intervalId;
+
+    var CatsItems = ['布偶猫', '狸花猫', '缅因猫', '大橘猫', '暹罗猫', '简州猫', '美短', '英短','三花猫',"励家磊猫"];
+    var catImages = [
+      'https://pic4.zhimg.com/v2-2d15196ec1e29be875a548285bd04cc8_r.jpg?source=1940ef5c',
+      'https://pic3.zhimg.com/v2-fe491272b6257f35123954543a6d7d58_r.jpg?source=1940ef5c',
+      'https://pic4.zhimg.com/v2-c61aac4dd23a24b5b0ed3ca3584cb7d7_r.jpg',
+      'https://th.bing.com/th/id/OIP.OTcg1z2w9CS0zOzuNIe8lgHaHa?rs=1&pid=ImgDetMain',
+      'https://img.zcool.cn/community/01dba859b236f5a801211d25cfccdb.jpg@1280w_1l_2o_100sh.jpg',
+      'https://so1.360tres.com/t01990a6e978fdefc8f.jpg',
+      'https://th.bing.com/th/id/R.025c25b230f2748cdce1827859c1f903?rik=A4x%2fv7rqm3HKwA&riu=http%3a%2f%2fwww.baobeita.com%2fupload%2fimage%2fproduct%2f201905%2f10438200%2f961b504c-8a4e-4cf4-a72d-eba5cd35132a-large.jpg&ehk=GOyqODVPxcOCTHO0nC5uCVpmM7lRtDFuH32%2fK4hpn88%3d&risl=&pid=ImgRaw&r=0',
+      'https://img.zcool.cn/community/018e5c5bf3c3fba8012092524731c7.jpg@2o.jpg',
+      'https://pic4.zhimg.com/v2-5eef68ca929e53fac37506eb810c95d6_r.jpg?source=1940ef5c',
+      'https://ts1.cn.mm.bing.net/th/id/R-C.7e7b2128f000ad85251aff594276b730?rik=ogIL8Ud2wVURVw&riu=http%3a%2f%2fwx1.sinaimg.cn%2flarge%2f006ARE9vgy1g2jgzljsh3j30k00k0js4.jpg&ehk=oX3vjy7wLC%2fqWaOTW9wypYf14C6ieJkDhDy06o5RtYo%3d&risl=&pid=ImgRaw&r=0'
+    ];
+
+    function startCats() {
+      clearInterval(intervalId);
+      intervalId = setInterval(function () {
+        var randomIndex = Math.floor(Math.random() * CatsItems.length);
+        var selectedCat = CatsItems[randomIndex];
+        var selectedImage = catImages[randomIndex];
+        
+        displayBox.innerHTML = `
+          <p>${selectedCat}</p>
+          <img src="${selectedImage}" alt="${selectedCat}" style="max-width: 100%; max-height: 100%;">
+        `;
+      }, 10);
+    }
+
+    function stopCats() {
+      clearInterval(intervalId);
+    }
+  </script>
+
+</body>
+</html>

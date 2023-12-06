@@ -1,0 +1,40 @@
+- class_name: 友情链接
+  class_desc: 朋友
+  link_list:
+
+    - name: Ljler
+      link: https://zzczzczzc.top/
+      avatar: https://zzczzczzc.top/images/avatar.jpg
+      descr: 蓝狗+飞猪
+
+    - name: Wjer
+      link: https://cutcutfish.org/
+      avatar: https://pic.ziyuan.wang/2023/10/04/lvettk_d4a84d5990e6a.jpg
+      descr: 神秘高冷大男孩
+
+    - name: Cher
+      link: https://chchch-art.github.io/
+      avatar: https://chchch-art.github.io/img/headimage.png
+      descr: 未来的金融大佬
+
+    - name: Z01er
+      link: https://z01prime.github.io/
+      avatar: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+      descr: 竞赛哥
+
+    - name: ZHHEO
+      link: https://blog.zhheo.com/
+      avatar: https://blog.zhheo.com/img/avatar.png
+      descr: 超级大佬
+      
+- class_name: 特别鸣谢
+  class_desc: 博客框架及主题
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网络框架
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function huiwen(num) {
+                var arr = [];
+                for (var i = 0; i < 1000; i++) {
+                    var tmparr = i.toString().split("").reverse().join("");
+                    if (num == tmparr) {
+                        arr.push(tmparr);
+                    }
+                }
+                return arr;
+            }
+
+            function displayResult() {
+                var result = huiwen("121"); 
+                document.getElementById("result").innerHTML = result.join(", ");
+            }
+
+            window.onload = displayResult; 
+        </script>
+    </head>
+    
+    <body>
+        <p id="result"></p>
+    </body>
+
+</html>
