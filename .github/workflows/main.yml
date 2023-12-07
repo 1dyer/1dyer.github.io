@@ -3,7 +3,7 @@ name: Auto Deploy Hexo Blog
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
