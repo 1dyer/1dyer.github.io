@@ -9,11 +9,11 @@
 
 /*这里放外框*/
 body{
-    cursor:url(https://cdn.custom-cursor.com/db/7248/32/starter-3d-effect-cursor-cursor.png) , default!important;
+    cursor:url(https://cdn.custom-cursor.com/db/5006/32/arrow2836.png) , default!important;
     }
     /*这里放内框*/
 a,img,button{
-    cursor:url(https://cdn.custom-cursor.com/db/7247/32/starter-3d-effect-cursor-pointer.png) , pointer!important;
+    cursor: url(https://cdn.custom-cursor.com/db/5005/32/arrow2836.png) , pointer !important;
     }
  
     
