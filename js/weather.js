@@ -22,3 +22,13 @@ WIDGET = {
       "key": "7d4a8e7eba804b3ca1da4071084b3756"
     }
   }
+if (document.querySelector('#bber-talk')) {
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    loop: true,
+    autoplay: {
+    delay: 3000,
+    pauseOnMouseEnter: true
+  },
+  });
+}

@@ -5,6 +5,35 @@
     -ms-flex-item-align: start;
     padding: 50px 40px;
 }
+#aside-content #card-toc .toc-content {
+    width: 260px;
+}
+
+#aside-content #card-toc .toc-content .toc-link {
+    font-size: 15px;
+}
+
+/*bb-talk*/
+#bbTimeList {
+    background: linear-gradient(-45deg,
+    #e8d8b9,
+    #eccec5,
+    #a3e9eb,
+    #bdbdf0,
+    #eec1ea);
+    box-shadow: 0 0 5px rgb(66, 68, 68);
+    margin-top: 1rem;
+    padding: 0.6rem 1rem 0.5rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+
+#aside-content .card-announcement .item-headline i {
+    color: rgb(53, 183, 41);
+}
 
 
 /*这里放外框*/
@@ -18,13 +47,26 @@ a,img,button{
  
     
 /* 所有背景（包括首页卡片、文章页、页面页等） */
-#aside_content .card-widget, #recent-posts>.recent-post-item, .layout>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+.aplayer .aplayer-list ol li.aplayer-list-light, .aplayer, #aside_content .card-widget, #recent-posts>.recent-post-item, .layout>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
     /* 以下代表白色透明度为0.3 */
     background: rgba(214, 242, 244, 0.7) !important;
     border:2px solid #0ff5ff;
     box-shadow: 1px 1px 10px #0ff5ff !important;
 }
 
+/* 版权信息 */
+#post .post-copyright .post-copyright-meta {
+    color: #21597d;
+    font-weight: bold;
+}
+#post .post-copyright .post-copyright-info {
+    padding-left: 6px;
+    color: #5274ba;
+}
+#post .post-copyright .post-copyright-info a{
+    padding-left: 6px;
+    color: #4b8de8
+}
 
 
 #git_container,#archive,#page{
@@ -34,15 +76,15 @@ a,img,button{
 }
 
 /*所有的侧边栏边框*/
-.card-widget{
-    border:2px solid #3d0f3f00 !important;
+.card-widget {
+    border: 2px solid #3d0f3f00 !important;
     box-shadow: 1px 1px 20px #c4e8fc !important;
-    --font-color:red;
-    --text-highlight-color:red;
+    --font-color: #2e8086;
+    --text-highlight-color: #110101;
 }
 /*主题下面的字体颜色*/
 [data-theme='dark']{
---font-color:#fdeacc00;
+--font-color: black;
 --text-highlight-color:#fdeacc;
 }
 
